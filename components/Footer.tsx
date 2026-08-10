@@ -14,7 +14,7 @@ const COLS = [
   {
     title: "Company",
     links: [
-      { href: "#", label: "About" },
+      { href: "/about", label: "About" },
       { href: "#", label: "Careers", hire: true },
       { href: "#security", label: "Security" },
       { href: "#", label: "Press kit" },
