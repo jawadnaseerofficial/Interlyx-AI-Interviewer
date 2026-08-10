@@ -103,7 +103,7 @@ export default function Nav() {
       {/* NAV */}
       <header className={`nav${scrolled ? " scrolled" : ""}`} id="nav">
         <div className="nav-in">
-          <a href="#top" className="logo" aria-label="Interlyx home">
+          <a href="/" className="logo" aria-label="Interlyx home">
             <Logo />
             INTERLYX
           </a>

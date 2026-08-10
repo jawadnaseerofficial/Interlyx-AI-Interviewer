@@ -47,7 +47,7 @@ export default function Footer() {
       <div className="container">
         <div className="ft-grid">
           <div className="ft-brand">
-            <a href="#top" className="logo">
+            <a href="/" className="logo">
               <Logo />
               INTERLYX
             </a>
