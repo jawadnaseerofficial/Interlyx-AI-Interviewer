@@ -559,3 +559,62 @@ footer{border-top:1px solid var(--line);background:var(--bg1);padding:80px 0 34p
   .auth-console{display:none}
   .auth-card{order:1;padding:36px 28px}
 }
+
+/* ============ DEMO ============ */
+.demo{min-height:100vh;position:relative;padding:calc(var(--nav-h) + 44px) 0 70px;overflow:hidden;background:
+  radial-gradient(ellipse 55% 42% at 85% 6%,rgba(59,240,131,.09),transparent 60%),
+  radial-gradient(ellipse 50% 42% at 5% 92%,rgba(59,240,131,.05),transparent 60%)}
+.demo-in{position:relative;z-index:2;width:min(1180px,94%);margin-inline:auto;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.demo-art{position:sticky;top:calc(var(--nav-h) + 40px)}
+.a-fake{display:inline-flex;align-items:center;gap:12px;font-family:var(--disp);font-weight:800;font-size:1rem;letter-spacing:.18em;margin-bottom:34px}
+.demo-art h1{font-family:var(--disp);font-weight:800;font-size:clamp(1.9rem,4vw,2.9rem);line-height:1.06;letter-spacing:-.01em;margin-bottom:18px}
+.demo-art p.lead{color:var(--mut);max-width:44ch;margin-bottom:36px}
+.dmo-quote{border:1px solid var(--line2);border-left:3px solid var(--grn);border-radius:8px;background:rgba(59,240,131,.04);padding:18px 20px;margin-bottom:18px;font-family:var(--mono);font-size:13px;color:var(--mut);line-height:1.7}
+.dmo-quote b{display:block;color:var(--txt);font-weight:400;margin-bottom:4px}
+.dmo-quote .who{display:block;color:var(--grn);font-size:11px;letter-spacing:.1em;text-transform:uppercase;margin-top:8px}
+.demo-trust{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.demo-trust span{font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--dim);border:1px solid var(--line);border-radius:4px;padding:7px 12px;text-transform:uppercase}
+.demo-trust span::before{content:"✓ ";color:var(--grn)}
+.demo-card{background:var(--panel);border:1px solid var(--line2);border-radius:14px;padding:40px 38px;position:relative;box-shadow:0 40px 90px -40px rgba(0,0,0,.85)}
+.demo-card::before{content:"";position:absolute;inset:0 0 auto 0;height:2px;background:linear-gradient(90deg,transparent,var(--grn),transparent)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:34px}
+.steps .st{position:relative;text-align:center;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);padding-top:22px}
+.steps .st::before{content:"";position:absolute;top:8px;left:0;right:0;height:2px;background:var(--line)}
+.steps .st::after{content:attr(data-n);position:absolute;top:0;left:50%;transform:translateX(-50%);width:18px;height:18px;border-radius:50%;background:var(--bg1);border:1px solid var(--line2);display:grid;place-items:center;font-size:9px;color:var(--dim);transition:border-color .3s,color .3s,background .3s}
+.steps .st.on{color:var(--grn)}
+.steps .st.on::before{background:linear-gradient(90deg,var(--grn) var(--w,0%),var(--line) var(--w,0%))}
+.steps .st.on::after{background:var(--grn);border-color:var(--grn);color:var(--grn-ink)}
+.demo-card h2{font-family:var(--disp);font-weight:800;font-size:1.5rem;line-height:1.12;letter-spacing:-.01em;margin-bottom:6px}
+.demo-card .sub{color:var(--mut);font-size:.94rem;margin-bottom:26px}
+.fld-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.fld select{appearance:none;width:100%;background:#04100a url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%233bf083' fill='none' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat right 16px center;border:1px solid var(--line);border-radius:6px;padding:14px 40px 14px 16px;color:var(--txt);font-family:var(--mono);font-size:14px;outline:none;cursor:pointer;transition:border-color .3s,box-shadow .3s}
+.fld select:focus,.fld select:focus-within{border-color:var(--grn);box-shadow:0 0 0 3px rgba(59,240,131,.12)}
+.fld select option{background:var(--bg1);color:var(--txt)}
+.fld select:invalid{color:var(--dim)}
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px}
+.pill{font-family:var(--mono);font-size:12px;letter-spacing:.03em;color:var(--mut);border:1px solid var(--line2);border-radius:999px;padding:10px 16px;cursor:pointer;user-select:none;transition:border-color .25s,color .25s,background .25s}
+.pill:hover{border-color:var(--grn);color:var(--txt)}
+.pill.on{background:var(--grn);color:var(--grn-ink);border-color:var(--grn);font-weight:700}
+.dnav{display:flex;gap:12px;margin-top:8px}
+.dnav .btn{flex:1;justify-content:center}
+.dnav .bhalf{flex:0 0 auto;padding-inline:22px}
+.demo-err{display:none;align-items:center;gap:8px;background:rgba(255,107,107,.08);border:1px solid rgba(255,107,107,.3);color:#ff9c9c;font-family:var(--mono);font-size:12px;padding:11px 14px;border-radius:6px;margin-bottom:18px}
+.demo-err.show{display:flex}
+.demo-done{display:none;flex-direction:column;align-items:center;text-align:center;gap:14px;padding:20px 0}
+.demo-done.show{display:flex}
+.demo-done .ok{width:64px;height:64px;border-radius:50%;border:1px solid var(--grn);display:grid;place-items:center;font-size:26px;color:var(--grn);background:rgba(59,240,131,.08);box-shadow:0 0 40px -8px rgba(59,240,131,.6);animation:pop .5s var(--ease)}
+.demo-done .ref{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--dim);background:var(--bg1);border:1px dashed var(--line2);border-radius:6px;padding:8px 14px;text-transform:uppercase}
+.demo-recap{width:100%;border:1px solid var(--line);border-radius:8px;overflow:hidden;text-align:left}
+.demo-recap .rh{display:flex;justify-content:space-between;padding:10px 14px;border-bottom:1px solid var(--line);font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);background:var(--bg1)}
+.demo-recap .ri{display:flex;justify-content:space-between;gap:16px;padding:11px 14px;border-bottom:1px solid var(--line);font-size:13px;color:var(--mut)}
+.demo-recap .ri:last-child{border-bottom:0}
+.demo-recap .ri b{color:var(--txt);font-weight:500;text-align:right}
+.demo-note{margin-top:22px;text-align:center;font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--dim);text-transform:uppercase}
+.demo-note a{color:var(--grn)}
+@media(max-width:940px){
+  .demo-in{grid-template-columns:1fr;gap:44px}
+  .demo-art{position:static}
+  .demo-art h1{font-size:clamp(1.6rem,4vw,2.3rem)}
+  .demo-card{padding:32px 24px}
+  .fld-2{grid-template-columns:1fr}
+}

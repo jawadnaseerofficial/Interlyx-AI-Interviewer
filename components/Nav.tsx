@@ -20,7 +20,7 @@ const MENU_LINKS = [
   { href: "#signals", label: "Signals", small: "05" },
   { href: "#security", label: "Security", small: "06" },
   { href: "#pricing", label: "Pricing", small: "07" },
-  { href: "#cta", label: "Book a demo", small: "→" },
+  { href: "/demo", label: "Book a demo", small: "→" },
 ];
 
 export default function Nav() {
@@ -118,7 +118,7 @@ export default function Nav() {
             <a href="/signin" className="signin">
               Sign in
             </a>
-            <a href="#cta" className="btn btn-solid">
+            <a href="/demo" className="btn btn-solid">
               Book a demo
             </a>
             <button
