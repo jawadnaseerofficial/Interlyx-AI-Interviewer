@@ -34,7 +34,7 @@ const COLS = [
     title: "Legal",
     links: [
       { href: "/privacy", label: "Privacy" },
-      { href: "#", label: "Terms" },
+      { href: "/terms", label: "Terms" },
       { href: "#", label: "DPA" },
       { href: "#", label: "Subprocessors" },
     ],
